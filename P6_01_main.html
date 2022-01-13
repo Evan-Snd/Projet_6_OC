@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="main1.css">
+    <title>Site tah Netflix</title>  
+    </head>
+    <body onclick="return false">
+        <header>
+            <div id="titre_principal">
+                <h1>JustStreamit</h1>                   
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Catégorie</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div id="block_image_meilleur_film">
+                <div id="meilleur_film">
+                Meilleur film :
+            </div>
+                <div id="banniere_image_film" class="box"></div>
+                <div><button id="myBtn">Plus d'infos</button></div>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="block_image_information">
+                      <div id="banniere_image_film_selectionned" class="box"></div>
+                      <div id="information_film" class="box">
+                        <div id="title-result" class="infofilm"></div>
+                        <div id="long-description-result" class="infofilm"></div>
+                        <div id="genre-result" class="infofilm"></div>
+                        <div id="date_published-result" class="infofilm"></div>
+                        <div id="imdb_score-result" class="infofilm"></div>
+                        <div id="realisateur-result" class="infofilm"></div>
+                        <div id="actors-result" class="infofilm"></div>
+                        <div id="duration-result" class="infofilm"></div>
+                        <div id="countries-result" class="infofilm"></div>
+                        <div id="rated-result" class="infofilm"></div>
+                        <div id="box-office-result" class="infofilm"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>        
+        </section>
+        <section>
+            <div id="films_mieux_note">
+                Films les mieux notés :
+            </div>
+            <div class="slider">
+                <div class="precedent" onclick="ChangeSlideBrf(-1)"><</div>
+                <div class="emplacement_film" id="fmn_film1"></div>
+                <div class="emplacement_film" id="fmn_film2"></div>
+                <div class="emplacement_film" id="fmn_film3"></div>
+                <div class="emplacement_film" id="fmn_film4"></div>
+                <div class="suivant" onclick="ChangeSlideBrf(1)">></div>
+            </div>
+        </section>
+        <section>
+            <div id="Categorie_1">
+                Action :
+            </div>
+            <div class="slider" onclick="return false">
+                <div class="precedent" onclick="ChangeSlideActionFilms(-1);"><</div>
+                <div class="emplacement_film" id="cat1_film1"></div>
+                <div class="emplacement_film" id="cat1_film2"></div>
+                <div class="emplacement_film" id="cat1_film3"></div>
+                <div class="emplacement_film" id="cat1_film4"></div>
+                <div class="suivant" onclick="ChangeSlideActionFilms(1);">></div>
+            </div>
+        </section>
+        <section>
+            <div id="Categorie_2">
+                Horreur :
+            </div>
+            <div class="slider" onclick="return false">
+                <div class="precedent" onclick="ChangeSlideHorrorFilms(-1)"><</div>
+                <div class="emplacement_film" id="cat2_film1"></div>
+                <div class="emplacement_film" id="cat2_film2"></div>
+                <div class="emplacement_film" id="cat2_film3"></div>
+                <div class="emplacement_film" id="cat2_film4"></div>
+                <div class="suivant" onclick="ChangeSlideHorrorFilms(1)">></div>
+            </div>
+        </section>
+        <section>
+            <div id="Categorie_3">
+                Romance :
+            </div>
+            <div class="slider">
+                <div class="precedent" onclick="ChangeSlideRomanceFilms(-1)"><</div>
+                <div class="emplacement_film" id="cat3_film1"></div>
+                <div class="emplacement_film" id="cat3_film2"></div>
+                <div class="emplacement_film" id="cat3_film3"></div>
+                <div class="emplacement_film" id="cat3_film4"></div>
+                <div class="suivant" onclick="ChangeSlideRomanceFilms(1)">></div>
+            </div>
+        </section>
+
+        <script type="text/javascript" src="main1.js"></script>
+  </body>
+</html>
